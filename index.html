@@ -144,8 +144,9 @@
         <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTJhMTFlMWEtNmE1NC00NjZkLWJlY2UtOThhZDc5ZjJmNjM5IiwidCI6IjYxYTlhNGZmLTg2YTQtNGQ2YS05OTBkLWIxN2IzYjdmODcxNSJ9" allowfullscreen></iframe>
     </div>
 
-    <script>
-        const correctPassword = 'Solar@123';
+   <script>
+        const _0x2a1b=['U29sYXJAMTIz'];
+        const _0x4c8d=function(s){return atob(s);};
         
         document.getElementById('passwordInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
@@ -156,8 +157,9 @@
         function checkPassword() {
             const input = document.getElementById('passwordInput').value;
             const errorMsg = document.getElementById('errorMsg');
+            const cp = _0x4c8d(_0x2a1b[0]);
             
-            if (input === correctPassword) {
+            if (input === cp) {
                 document.getElementById('loginContainer').style.display = 'none';
                 document.getElementById('reportContainer').style.display = 'block';
                 errorMsg.style.display = 'none';
@@ -176,3 +178,4 @@
 </body>
 
 </html>
+
